@@ -19,4 +19,3 @@ with DAG(
     )
 
     bash_t1 >> bash_t2
-

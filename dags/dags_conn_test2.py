@@ -8,7 +8,7 @@ with DAG(
     start_date=pendulum.datetime(2024, 6, 14, tz="Asia/Seoul"),
     catchup=False
 ) as dag:
-    
+
     t1 = EmptyOperator(
         task_id="t1"
     )
@@ -41,6 +41,6 @@ with DAG(
         task_id="t8"
     )
 
-    t1 >> [t2, t3] 
+    t1 >> [t2, t3]
     [t3, t5] >> t4
     [t4, t7] >> t6 >> t8
