@@ -8,7 +8,7 @@ with DAG(
     start_date=pendulum.datetime(2024, 6, 14, tz="Asia/Seoul"),
     catchup=False
 ) as dag:
-    
+
     t1_orange = BashOperator(
         task_id="t1_orange",
         bash_command="sh /opt/airflow/plugins/shell/select_fruit.sh ORANGE",
