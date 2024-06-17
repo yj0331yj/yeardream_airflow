@@ -23,3 +23,8 @@ with DAG(
 
     python_task_1 = regist3('hjkim', 'man', 'seoul',
                             email='hjkim_sun@naver.com', phone='010')
+
+    data_interval_start = kwargs.get('data_interval_start')
+    data_interval_end = kwargs.get('data_interval_end')
+    print(data_interval_start)
+    print(data_interval_end)
